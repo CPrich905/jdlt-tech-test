@@ -43,3 +43,4 @@ Running `yarn seed` returns cannot read dropDatabase of undefined as above error
 * tried mkdir & sudo mkdir -p /data/db
 prompts password. Entering password gets the following:
 outcome: mkdir: /data/db: Read-only file system
+* added console.log to mongoose.connect() in index.js. This fires.
