@@ -30,3 +30,16 @@ Then it's over to you!
 
 1. yarn init & setup github repo
 2. basic app set up with config, models & controllers
+
+## Current stage
+Scripts updated
+* Running `nodemon index.js` shows up and running on correct port but then returns a mongo timeout error.
+
+* Seeding/creating db
+Running `mongod` returns the following error: 
+```exception in initAndListen: NonExistentPath: Data directory /data/db not found., terminating```
+
+Running `yarn seed` returns cannot read dropDatabase of undefined as above errors.
+* tried mkdir & sudo mkdir -p /data/db
+prompts password. Entering password gets the following:
+outcome: mkdir: /data/db: Read-only file system
