@@ -8,4 +8,4 @@ const { port, dbURI } = require('./config/environment')
 mongoose.connect(dbURI,{ useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true })
 app.use('/api', router)
 
-app.listen(port, () => console.log(`Up and running on port ${port}`))
+app.listen(port, () => console.log(`JDLT test up and running on port ${port}`))

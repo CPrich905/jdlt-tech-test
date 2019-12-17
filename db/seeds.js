@@ -1,10 +1,11 @@
 const mongoose = require('mongoose')
+mongoose.Promise = require('bluebird')
 const { dbURI } = require('../config/environment')
 const Product = require('../models/product')
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true }, (err, db) => {
-  if (err) return console.log(err)
-  db.dropatabase()
+mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, (err, db) => {
+  // if (err) return console.log(err)
+  db.dropDatabase()
 
   Product.create([
   {

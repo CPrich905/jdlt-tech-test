@@ -4,6 +4,7 @@
   "description": "JDLT developer technical challenge",
   "main": "index.html",
   "scripts": {
+    "seed": "node db/seeds.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git+https://github.com/JDLT-Ltd/dev-challenge.git",

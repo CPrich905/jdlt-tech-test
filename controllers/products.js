@@ -1,12 +1,15 @@
 const Product = require('../models/product')
 
-function indexProducts(req, res, next) {
+function indexAllProducts(req, res) {
   Product
-    .find()
-    .then(products => res.json(products))
-    .catch(next)
+    .find(req.query)
+    .then(products => {
+      if(!products) {
+        return res.sendStatus(404)
+      } else return res.status(200).json(products)})
+    .catch()
 }
 
 module.exports = {
-  index: indexProducts
+  index: indexAllProducts
 }

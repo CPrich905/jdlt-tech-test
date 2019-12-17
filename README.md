@@ -6,6 +6,7 @@ The [job spec](https://jdlt.co.uk/join/full-stack-developer) will help you under
 * NPM / Yarn
 * Nodemon (install locally if you do not already have this)
 * express
+* mongoose
 
 ## Instructions
 From the project root folder:
