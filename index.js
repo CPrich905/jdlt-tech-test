@@ -11,4 +11,8 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifie
 app.use(bodyParser.json())
 app.use('/api', router)
 
-app.listen(port, () => console.log(`JDLT test up and running on port ${port}`))
+if(!module.parent){
+  app.listen(port, () => console.log(`JDLT test up and running on port ${port}`))
+}
+
+module.exports = app

@@ -7,6 +7,7 @@ The [job spec](https://jdlt.co.uk/join/full-stack-developer) will help you under
 * Nodemon (install locally if you do not already have this)
 * express
 * mongoose
+* mocha, chai, supertest (testing)
 
 ## Instructions
 From the project root folder:
@@ -32,6 +33,15 @@ Then it's over to you!
 2. basic app set up with config, models & controllers
 
 ## Current stage
+Testing routes
+  - added mocha/chai/supertest
+  - added test folder, spec_helper.js & mocha.opts
+  - first test is running after initial EAD in use error. SOLUTION: in index.js wrap app.listen(...) in if(!module.parent){app.listen(...)} TEST PASSES
+  - api tests pass.
+
+
+
+## Challenges
 Scripts updated
 * Running `nodemon index.js` shows up and running on correct port but then returns a mongo timeout error.
 
@@ -46,3 +56,4 @@ outcome: mkdir: /data/db: Read-only file system
 * added console.log to mongoose.connect() in index.js. This fires.
 
 Above problems likely caused by Catalina update - fixed by creating a data/db folder in home directory & running `mongod` again.
+

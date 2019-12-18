@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "seed": "node db/seeds.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/**/*_spec.js --require test/spec_helper --recursive --exit"
   },
   "repository": "git+https://github.com/JDLT-Ltd/dev-challenge.git",
   "author": "Jake Dowie <jake@jdlt.co.uk>",
@@ -16,9 +16,12 @@
   "homepage": "https://github.com/JDLT-Ltd/dev-challenge#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "chai": "^4.2.0",
     "express": "^4.17.1",
     "jquery": "^3.2.1",
+    "mocha": "^6.2.2",
     "mongoose": "^5.8.1",
-    "mongoose-unique-validator": "^2.0.3"
+    "mongoose-unique-validator": "^2.0.3",
+    "supertest": "^4.0.2"
   }
 }
