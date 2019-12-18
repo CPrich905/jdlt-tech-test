@@ -8,6 +8,8 @@ const { port, dbURI } = require('./config/environment')
 
 mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, () => console.log('database connected'))
 
+app.use(express.static(`${__dirname}/public`))
+
 app.use(bodyParser.json())
 app.use('/api', router)
 

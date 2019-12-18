@@ -31,29 +31,29 @@ Then it's over to you!
 
 1. yarn init & setup github repo
 2. basic app set up with config, models & controllers
+3. created db & seeds file with provided product details
+4. Routed
+5. Tested index/create/find routes
 
 ## Current stage
 Testing routes
   - added mocha/chai/supertest
   - added test folder, spec_helper.js & mocha.opts
   - first test is running after initial EAD in use error. SOLUTION: in index.js wrap app.listen(...) in if(!module.parent){app.listen(...)} TEST PASSES
-  - api tests pass.
+  - api index, find, create & delete route tests pass.
 
+Routes:
+- index (PASS TEST)
+- create (PASS TEST)
+- find one (PASS TEST)
+- delete one (PASS TEST)
+
+To do:
+- delete/update route
+- hide create/delete behind secure route
 
 
 ## Challenges
-Scripts updated
-* Running `nodemon index.js` shows up and running on correct port but then returns a mongo timeout error.
-
-* Seeding/creating db
-Running `mongod` returns the following error: 
-```exception in initAndListen: NonExistentPath: Data directory /data/db not found., terminating```
-
-Running `yarn seed` returns cannot read dropDatabase of undefined as above errors.
-* tried mkdir & sudo mkdir -p /data/db
-prompts password. Entering password gets the following:
-outcome: mkdir: /data/db: Read-only file system
-* added console.log to mongoose.connect() in index.js. This fires.
-
-Above problems likely caused by Catalina update - fixed by creating a data/db folder in home directory & running `mongod` again.
+During my initial setup I encountered a minor stumbling block when running `mongod` in terminal. I discovered this is likely caused by a recent apple OS update which made the home directory non-writable.
+The solution I reached was to build a new C:data/db in Home and manually set the mongod db by running `mongod --dbpath ~/data/db`
 
