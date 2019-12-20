@@ -6,7 +6,7 @@ const app = express()
 const router = require('./config/router')
 const { port, dbURI } = require('./config/environment')
 
-mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true }, () => console.log('database connected'))
+mongoose.connect(dbURI, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true, useFindAndModify: false }, () => console.log('database connected'))
 
 app.use(express.static(`${__dirname}/public`))
 

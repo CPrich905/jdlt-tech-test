@@ -8,6 +8,9 @@ The [job spec](https://jdlt.co.uk/join/full-stack-developer) will help you under
 * express
 * mongoose
 * mocha, chai, supertest (testing)
+* bootstrap & jquery outdated from initial but working.
+* React
+* axios
 
 ## Instructions
 From the project root folder:
@@ -18,9 +21,8 @@ OR
 ```
 $ yarn
 ```
-Then it's over to you!
 
-**Please demonstrate:**
+**Key deliverables:**
 * Selecting suppliers and products in the drop-downs
 * A round-trip to a server pulling back prices
 * Displaying the returned data in the grid
@@ -32,8 +34,10 @@ Then it's over to you!
 1. yarn init & setup github repo
 2. basic app set up with config, models & controllers
 3. created db & seeds file with provided product details
-4. Routed
-5. Tested index/create/find routes
+4. Routed, tested in insomnia
+5. Tested routes Mocha/Chai
+6. Introduced webpack & React frontend
+  - built modules for home, navbar & selector
 
 ## Current stage
 Testing routes
