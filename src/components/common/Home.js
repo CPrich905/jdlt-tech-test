@@ -3,8 +3,6 @@ import React from 'react'
 class Home extends React.Component {
   constructor(){
     super()
-
-    this.state = { products: [] }
   }
 
   render() {
@@ -14,7 +12,7 @@ class Home extends React.Component {
       <section className="homepage-section">
         <div className="homepage-div">
           <p>Homepage/Header</p>
-          <p>To use this product selector, choose your search parameters below. You can filter by supplier or product.</p>
+          <p>To view our products click the "Show all products Tab below" or "Index" in the NavBar</p>
         </div>
       </section>
     )

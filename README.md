@@ -40,7 +40,7 @@ $ yarn
   - built modules for home, navbar & selector
 
 ## Current stage
-Testing routes
+Route Testing
   - added mocha/chai/supertest
   - added test folder, spec_helper.js & mocha.opts
   - first test is running after initial EAD in use error. SOLUTION: in index.js wrap app.listen(...) in if(!module.parent){app.listen(...)} TEST PASSES
@@ -52,8 +52,16 @@ Routes:
 - find one (PASS TEST)
 - delete one (PASS TEST)
 
+
+React Front End:
+- Home & NavBar created (!TEST)
+- Index makes Get Request (!TEST)
+- ProductCard made & shows (!TEST)
+- NewProduct functions (!TEST)
+!! Filtering !!
+
 To do:
-- delete/update route
+
 - hide create/delete behind secure route
 
 

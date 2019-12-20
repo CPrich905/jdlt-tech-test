@@ -9,20 +9,16 @@ class ProductIndex extends React.Component{
     this.state = { products: null }
   }
 
-  getData() {
-    
-  }
-
   componentDidMount() {
-    console.log('index cdm fires')
     axios.get('api/products')
       .then(res => this.setState({ products: res.data }))
       .catch(err => console.log(err))
   }
 
+  //GET request to API. Set data in state & map over each product to produce display of products.
+  //click on product to set a new class name. Style so selected product is bigger & central to page.
   render() {
     if(!this.state.products) return null
-    console.log('index renders, t.s.products is', this.state.products)
     return(
       <section className="section">
         <div className="container">

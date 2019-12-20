@@ -11,7 +11,6 @@ class NavBar extends React.Component {
         <div className="navbar-div">
           <p>Show all products</p>
           <p>Create new product</p>
-
         </div>
       </section>
     )
