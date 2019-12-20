@@ -37,7 +37,7 @@ $ yarn
 4. Routed, tested in insomnia
 5. Tested routes Mocha/Chai
 6. Introduced webpack & React frontend
-  - built modules for home, navbar & selector
+  - built modules for home, navbar, index, new (& form)
 
 ## Current stage
 Route Testing
@@ -58,12 +58,13 @@ React Front End:
 - Index makes Get Request (!TEST)
 - ProductCard made & shows (!TEST)
 - NewProduct functions (!TEST)
-!! Filtering !!
 
 To do:
-
-- hide create/delete behind secure route
-
+1. FILTER FUNCTIONS!
+2. Testing React
+3. styling
+4. hide create/delete behind secure route
+5. submit
 
 ## Challenges
 During my initial setup I encountered a minor stumbling block when running `mongod` in terminal. I discovered this is likely caused by a recent apple OS update which made the home directory non-writable.
