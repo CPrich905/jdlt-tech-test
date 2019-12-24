@@ -47,10 +47,10 @@ Route Testing
   - api index, find, create & delete route tests pass.
 
 Routes:
-- index (PASS TEST)
-- create (PASS TEST)
-- find one (PASS TEST)
-- delete one (PASS TEST)
+- index (TESTED/PASSED)
+- create (TESTED/PASSED)
+- find one (TESTED/PASSED)
+- delete one (TESTED/PASSED)
 
 
 React Front End:
@@ -58,6 +58,7 @@ React Front End:
 - Index makes Get Request (!TEST)
 - ProductCard made & shows (!TEST)
 - NewProduct functions (!TEST)
+- EditProduct (!TEST)
 
 To do:
 1. FILTER FUNCTIONS!

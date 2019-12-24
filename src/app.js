@@ -7,6 +7,7 @@ import Home from './components/common/Home'
 // import Selector from './components/Products/Selector'
 import ProductIndex from './components/Products/ProductsIndex'
 import NewProduct from './components/Products/NewProduct'
+import EditProduct from './components/Products/EditProduct'
 
 // Home/Landing page should show all products & filter options.
 // Navbar holds route to creating new product/indexing all products
@@ -20,6 +21,7 @@ const App = () => {
         <Switch>
           <Route path="/products" component={ProductIndex} />
           <Route path="/new" component={NewProduct}/>
+          <Route path="/products/:id/edit" component={EditProduct}/>
           <Route exact path="/" component={Home} />
         </Switch>  
       </main>

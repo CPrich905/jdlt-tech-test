@@ -8,5 +8,6 @@ router.route('/products')
 router.route('/products/:id')
   .get(products.find)
   .delete(products.delete)
+  .put(products.edit)
 
 module.exports = router

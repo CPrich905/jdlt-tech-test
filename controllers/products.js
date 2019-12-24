@@ -23,6 +23,13 @@ function findSingleProduct(req, res) {
     .then(product => res.status(200).json(product))
 }
 
+function editProduct(req, res, next) {
+  Product
+    .findById(req.params.id)
+    .then(product => res.status(201).json(product))
+    .catch(next)
+}
+
 function deleteProduct(req, res) {
   Product
     .findByIdAndRemove(req.params.id)
@@ -34,4 +41,5 @@ module.exports = {
   create: createNewProduct,
   find: findSingleProduct,
   delete: deleteProduct,
+  edit: editProduct
 }
