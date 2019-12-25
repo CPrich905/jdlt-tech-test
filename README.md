@@ -40,6 +40,31 @@ $ yarn
   - built modules for home, navbar, index, new (& form)
 
 ## Current stage
+Homepage and ProductCard removed as unnecessary. Displaying as table instead.
+
+SEARCHBARS
+Created SearchBars as common component. It takes unique product/supplier names and creates a list on click.
+- (SB)style into dropdown menu
+- (PI>SB)add search function onKeyUp.
+  - use toUppercase() to search for matches with products
+- (PI) take response from (SB) and setState(display: response)
+
+React Front End:
+- NavBar created (!TEST)
+- Index makes Get Request (!TEST)
+- NewProduct functions (!TEST)
+- EditProduct (!TEST)
+- SearchBar (!TEST)
+
+
+To do:
+1. FILTER FUNCTIONS!
+2. Testing React
+3. styling
+4. hide create/delete behind secure route
+5. submit
+
+## COMPLETED
 Route Testing
   - added mocha/chai/supertest
   - added test folder, spec_helper.js & mocha.opts
@@ -51,21 +76,6 @@ Routes:
 - create (TESTED/PASSED)
 - find one (TESTED/PASSED)
 - delete one (TESTED/PASSED)
-
-
-React Front End:
-- Home & NavBar created (!TEST)
-- Index makes Get Request (!TEST)
-- ProductCard made & shows (!TEST)
-- NewProduct functions (!TEST)
-- EditProduct (!TEST)
-
-To do:
-1. FILTER FUNCTIONS!
-2. Testing React
-3. styling
-4. hide create/delete behind secure route
-5. submit
 
 ## Challenges
 During my initial setup I encountered a minor stumbling block when running `mongod` in terminal. I discovered this is likely caused by a recent apple OS update which made the home directory non-writable.

@@ -40,4 +40,4 @@ class EditProduct extends React.Component {
   }
 }
 
-export default ProductEdit
+export default EditProduct

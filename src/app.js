@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import NavBar from './components/common/Navbar'
-import Home from './components/common/Home'
-// import Selector from './components/Products/Selector'
 import ProductIndex from './components/Products/ProductsIndex'
 import NewProduct from './components/Products/NewProduct'
 import EditProduct from './components/Products/EditProduct'
@@ -19,10 +17,9 @@ const App = () => {
         <NavBar />
 
         <Switch>
-          <Route path="/products" component={ProductIndex} />
           <Route path="/new" component={NewProduct}/>
           <Route path="/products/:id/edit" component={EditProduct}/>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={ProductIndex} />
         </Switch>  
       </main>
     </BrowserRouter>
