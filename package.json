@@ -20,7 +20,7 @@
   "homepage": "https://github.com/JDLT-Ltd/dev-challenge#readme",
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "chai": "^4.2.0",
     "express": "^4.17.1",
     "jquery": "^3.2.1",
